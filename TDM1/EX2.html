@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 2 - TDM2</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-right: 10px;
+        }
+        input, select, textarea {
+            margin-bottom: 10px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulaire d'inscription</legend>
+            <label>Nom :</label>
+            <input type="text" placeholder="Saisir Votre Nom"><br>
+            <label>Prenom :</label>
+            <input type="text" placeholder="Saisir Votre Prenom"><br>
+            <label>Email :</label>
+            <input type="email" placeholder="Saisir Votre Email"><br>
+            <label for="Sexe">Sexe :</label>
+            <input type="radio" name="Sexe">
+            <label>Masciline</label>
+            <input type="radio" name="Sexe">
+            <label>Feminine</label><br>
+            <label>Date de Naissance :</label>
+            <input type="date"><br>
+            <label>Photo :</label>
+            <input type="file"><br>
+            <label>Pays :</label>
+            <select>
+                <option>Maroc</option>
+            </select><br>
+            <label>Les Languages Préféres :</label>
+            <select>
+                <option>Java</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>PHP</option>
+            </select><br>
+            <label>Votre Couleur Préfére :</label>
+            <input type="color"><br>
+            <label>Domaines d'activités :</label>
+            <input type="checkbox">
+            <label>Informatique</label>
+            <input type="checkbox">
+            <label>Gestion</label>
+            <input type="checkbox">
+            <label>Pèdagogie</label><br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </fieldset>
+    </form>
+</body>
+</html>
