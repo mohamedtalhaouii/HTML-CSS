@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5 - TDM1</title>
+</head>
+<body>
+    <fieldset style="width: 70%; border-color: black; border-width: 5px; margin-left: 10px;">
+        <h1>XML Schema</h1>
+        <h2>Definition</h2>
+        <p>
+            <strong>XML Schema</strong> publié comme recommandation par le W3C en mai 2001, est un langage qui permet de décrire la structure et le type de contenu d'un document XML. Il est utilisé principalement pour valider la conformité d'un document XML à un modèle prédéfini.
+        </p>
+        <h2>Modèle de XML Schema</h2>
+        <p>
+            Cette recommandation spécifie les règles de validation des documents XML en s'appuyant sur un modèle abstrait, en définissant le format des éléments XML. Un schéma XML est ainsi un ensemble de composants permettant de structurer le contenu.
+        </p>
+        <h2>Exemple</h2>
+            <pre>
+                <code>
+                            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                    &lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+                    &lt;xs:element name="personne"&gt;
+                        &lt;xs:complexType&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element name="nom" type="xs:string" /&gt;
+                            &lt;xs:element name="prenom" type="xs:string" /&gt;
+                            &lt;xs:element name="date_naissance" type="xs:date" /&gt;
+                            &lt;xs:element name="etablissement" type="xs:string" /&gt;
+                            &lt;xs:element name="num_tel" type="xs:string" /&gt;
+                        &lt;/xs:sequence&gt;
+                        &lt;/xs:complexType&gt;
+                    &lt;/xs:element&gt;
+                    &lt;/xs:schema&gt;
+                </code>
+            </pre>
+    </fieldset>
+</body>
+</html>
