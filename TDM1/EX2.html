@@ -4,61 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice 2 - TDM1</title>
-    <style>
-        label {
-            display: inline-block;
-            width: 150px;
-            margin-right: 10px;
-        }
-        input, select, textarea {
-            margin-bottom: 10px;
-        }
-        input[type="radio"], input[type="checkbox"] {
-            margin-right: 5px;
-        }
-    </style>
 </head>
 <body>
     <form>
         <fieldset>
             <legend>Formulaire d'inscription</legend>
-            <label>Nom :</label>
-            <input type="text" placeholder="Saisir Votre Nom"><br>
-            <label>Prenom :</label>
-            <input type="text" placeholder="Saisir Votre Prenom"><br>
-            <label>Email :</label>
-            <input type="email" placeholder="Saisir Votre Email"><br>
-            <label for="Sexe">Sexe :</label>
-            <input type="radio" name="Sexe">
-            <label>Masciline</label>
-            <input type="radio" name="Sexe">
-            <label>Feminine</label><br>
-            <label>Date de Naissance :</label>
-            <input type="date"><br>
-            <label>Photo :</label>
-            <input type="file"><br>
-            <label>Pays :</label>
-            <select>
-                <option>Maroc</option>
-            </select><br>
-            <label>Les Languages Préféres :</label>
-            <select size="4">
-                <option>Java</option>
-                <option>C</option>
-                <option>C++</option>
-                <option>PHP</option>
-            </select><br>
-            <label>Votre Couleur Préfére :</label>
-            <input type="color"><br>
-            <label>Domaines d'activités :</label>
-            <input type="checkbox">
-            <label>Informatique</label>
-            <input type="checkbox">
-            <label>Gestion</label>
-            <input type="checkbox">
-            <label>Pèdagogie</label><br>
-            <input type="submit" value="Envoyer">
-            <input type="reset" value="Annuler">
+                <table>
+                    <tr>
+                        <td><label>Nom :</label></td>
+                        <td><input type="text" placeholder="Saisir Votre Nom"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Prenom :</label></td>
+                        <td><input type="text" placeholder="Saisir Votre Prenom"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email :</label></td>
+                        <td><input type="email" placeholder="Saisir Votre Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Sexe">Sexe :</label></td>
+                        <td>            
+                            <input type="radio" name="Sexe">
+                            <label>Masciline</label>
+                            <input type="radio" name="Sexe">
+                            <label>Feminine</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Date de Naissance :</label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Photo :</label></td>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Pays :</label></td>
+                        <td>
+                            <select>
+                                <option>Maroc</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Les Languages Préféres :</label></td>
+                        <td>
+                            <select size="4">
+                            <option>Java</option>
+                            <option>C</option>
+                            <option>C++</option>
+                            <option>PHP</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td><label>Votre Couleur Préfére :</label></td>
+                        <td><input type="color"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Domaines d'activités :</label>
+                        </td>
+                        <td><input type="checkbox">
+                            <label>Informatique</label>
+                            <input type="checkbox">
+                            <label>Gestion</label>
+                            <input type="checkbox">
+                            <label>Pèdagogie</label>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Annuler">
         </fieldset>
     </form>
 </body>
