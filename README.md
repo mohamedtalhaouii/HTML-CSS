@@ -75,6 +75,7 @@ HTML5 a introduit des balises sémantiques pour améliorer l'organisation et l'a
 - **`<aside>`** : Informations complémentaires ou barre latérale.
 - **`<main>`** : Contenu principal de la page.
 
+<hr>
 
 ## Résumé Complet de CSS
 
