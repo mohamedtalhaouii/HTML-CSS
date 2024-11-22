@@ -1,0 +1,19 @@
+/* Création d'un Fichier CSS Externe */
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: darkblue;
+    text-transform: uppercase;
+}
+.important {
+    color: orange;
+    font-size: 20px;
+}
+#conteneur {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+}

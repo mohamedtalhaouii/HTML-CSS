@@ -1,0 +1,15 @@
+Comparaison des Méthodes :
+
+Remarquez les avantages et inconvénients de chaque méthode :
+    • Feuille de style interne :
+    -->
+    • Styles en ligne :
+    -->
+    • Feuille de style externe :
+    -->
+
+Pourquoi est-il recommandé d'utiliser des feuilles de style externes ?
+-->
+
+Quels sont les avantages de la séparation du fond et de la forme ?
+-->

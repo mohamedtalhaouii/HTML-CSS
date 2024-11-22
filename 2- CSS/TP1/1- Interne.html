@@ -1,0 +1,36 @@
+<!--| Séparation du Fond et de la Forme |-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 - Introduction à CSS</title>
+    <!--Application de Styles en Interne-->
+    <style> 
+        body {
+            background-color: lightgray;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        .important {
+            color: red;
+            font-weight: bold;
+        }
+        #conteneur {
+            border: 2px solid green;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Utilisation des Styles en Ligne-->
+    <h1 style="color: purple;">Bienvenue au TP CSS</h1>
+    <p style="font-size: 18px;">Ceci est un paragraphe simple pour démontrer l'utilisation du CSS.</p>
+    <p class="important">Ce paragraphe a une classe "important".</p>
+    <div id="conteneur">Ceci est une div avec un ID.</div>
+</body>
+</html>
