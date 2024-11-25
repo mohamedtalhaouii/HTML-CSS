@@ -42,3 +42,12 @@ h1, p {
     color: red;
     background-color: lightyellow;
 }
+
+/* Tester sélecteur :hover */
+p:hover {
+    background-color: violet; /* Change la couleur de fond au survol */
+}
+
+.important:hover {
+    background-color: red; /* pour la classe "important" */
+}
