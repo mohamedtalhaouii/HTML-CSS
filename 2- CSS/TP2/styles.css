@@ -1,0 +1,44 @@
+/* Sélecteur d'élément */
+p {
+    color: black;
+    font-size: 16px;
+    background-color: lightgray; /* nouvelle couleur de fond */
+}
+
+
+/* Sélecteur de classe */
+.highlight {
+    color: white;
+    background-color: blue;
+    padding: 5px;
+}
+
+/* Sélecteur d'ID */
+#container {
+    border: 2px solid red;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Sélecteur d'attribut */
+[title] {
+    color: purple;
+    font-style: italic;
+}
+
+/* Sélecteur universel */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Sélecteur multiple */
+h1, p {
+    text-align: center;
+}
+
+/* Nouvelle classe */
+.important {
+    font-weight: bold;
+    color: red;
+    background-color: lightyellow;
+}

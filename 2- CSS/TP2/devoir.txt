@@ -1,0 +1,7 @@
+Ajoutez un attribut title dans le fichier HTML :
+    <p title="texte spécial">Ce paragraphe a un attribut title.</p>
+
+Expérimentations :
+    • Changez la couleur de fond des éléments <p>.
+    • Ajoutez une nouvelle classe et appliquez-la à plusieurs éléments.
+    • Testez différents types de sélecteurs (comme le sélecteur de pseudo-classe :hover).
