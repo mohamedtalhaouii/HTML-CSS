@@ -2,14 +2,20 @@ Comparaison des Méthodes :
 
 Remarquez les avantages et inconvénients de chaque méthode :
     • Feuille de style interne :
-    -->
+    --> Avantages : Facile à mettre en place, utile pour une seule page.
+    --> Inconvénients : Moins réutilisable, augmente la taille du fichier HTML.
+
     • Styles en ligne :
-    -->
+    --> Avantages : Simple, pratique pour des changements rapides.
+    --> Inconvénients : Non réutilisable, encombre le HTML.
+
     • Feuille de style externe :
-    -->
+    --> Avantages : Sépare le contenu et la présentation, réutilisable, améliore les performances.
+    --> Inconvénients : Nécessite un fichier externe, peut causer des erreurs si mal lié.
+
 
 Pourquoi est-il recommandé d'utiliser des feuilles de style externes ?
--->
+--> Meilleure organisation, réutilisation, et optimisation des performances.
 
 Quels sont les avantages de la séparation du fond et de la forme ?
--->
+--> Clarté, réutilisation, accessibilité et meilleure performance grâce à la gestion centralisée du style.
