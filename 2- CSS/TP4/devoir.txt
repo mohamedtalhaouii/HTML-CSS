@@ -1,0 +1,4 @@
+Modifiez les propriétés Flexbox :
+    • Changez flex-direction en row et observez le changement.
+    • Utilisez justify-content pour centrer les éléments (center, space-between, space-around).
+    • Ajoutez des marges et des espacements (gap).

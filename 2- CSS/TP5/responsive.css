@@ -1,0 +1,17 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: lightyellow;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
+}

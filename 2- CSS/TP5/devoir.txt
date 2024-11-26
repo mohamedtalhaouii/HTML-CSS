@@ -1,0 +1,2 @@
+• Ajustez la largeur du navigateur et observez les changements.
+• Ajoutez des styles supplémentaires pour d'autres tailles d'écran (min-width, orientation).
