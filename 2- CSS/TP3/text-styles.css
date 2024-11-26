@@ -1,0 +1,32 @@
+/* Propriétés de base */
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+
+/* Taille et Style du Texte */
+p {
+    font-size: 16px;
+    /* color: #333; */
+    color: black; 
+}
+
+.highlight {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin-left: 20px;
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+}
+
+.important {
+    text-transform: uppercase;
+    color: #007bff;
+}

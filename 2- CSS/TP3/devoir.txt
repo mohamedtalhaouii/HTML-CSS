@@ -1,0 +1,8 @@
+
+• Changer la couleur et la police (font-family) du texte.
+• Ajouter des ombres (text-shadow) aux titres.
+• Tester différentes valeurs pour text-align (left, right, center, justify).
+
+• Modifier les tailles de texte en utilisant px, em, et %.
+• Observer comment la taille change en fonction de l'écran et du conteneur parent.
+• Tester l'effet de l'utilisation de différentes unités sur la lisibilité et l'adaptabilité du texte
