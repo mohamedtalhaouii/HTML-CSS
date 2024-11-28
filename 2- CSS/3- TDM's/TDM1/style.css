@@ -1,0 +1,86 @@
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #a3c97d;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.header .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.header h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+.horizontal {
+    background-color: black;
+    text-align: right;
+}
+.horizontal a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+.layout {
+    display: flex;
+}
+.vertical {
+    width: 15em;
+    font-weight: bold;
+    background-color: green;
+    padding: 10px;
+    color: white;
+}
+.vertical ul {
+    list-style: none;
+    padding: 0;
+}
+.vertical ul li {
+    margin-bottom: 10px;
+}
+.vertical ul li a {
+    color: white;
+    text-decoration: none;
+}
+.vertical ul li a:hover {
+    background-color: greenyellow;
+    padding: 5px;
+    color: green;
+    display: block;
+}
+.section-principale {
+    flex: 1;
+    padding: 20px;
+}
+.section-principale h2 {
+    color: #003300;
+    border-bottom: 2px solid #cccc00;
+    padding-bottom: 5px;
+}
+.encart-droite {
+    width: 200px;
+    padding-top: 100px;
+}
+.encart-droite h3 {
+    color: black;
+    font-size: 1.2rem;
+}
+.encart-droite ul {
+    list-style: none;
+    padding: 0;
+}
+.encart-droite ul li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
