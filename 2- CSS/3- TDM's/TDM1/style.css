@@ -1,16 +1,14 @@
-
+/*Mohamed Talhaoui*/
 body {
     font-family: Verdana, sans-serif;
     background-color: white;
     color: black;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 .header {
-    background-color: #a3c97d;
-    padding: 20px;
-    display: flex;
-    align-items: center;
+    background-color: #97c05f;
+    height: 100px;
 }
 .header .logo {
     width: 50px;
@@ -18,9 +16,11 @@ body {
     margin-right: 10px;
 }
 .header h1 {
-    font-size: 1.5rem;
+    font-size: 20px;
     color: white;
-    margin: 0;
+    text-align: center;
+    text-indent: -500px;
+    margin: -10px;
 }
 .horizontal {
     background-color: black;
@@ -29,22 +29,24 @@ body {
 .horizontal a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
-    font-size: 0.9rem;
+    margin-right: 10px;
+    font-size: 15px;
 }
 .layout {
     display: flex;
 }
 .vertical {
     width: 15em;
-    font-weight: bold;
-    background-color: green;
-    padding: 10px;
+    height: 25em;
+    font-weight: bolder;
+    background-color: #326703;
     color: white;
+    padding-left: 20px;
+    margin: 0;
 }
 .vertical ul {
     list-style: none;
-    padding: 0;
+    padding-left: 20px;
 }
 .vertical ul li {
     margin-bottom: 10px;
@@ -53,11 +55,12 @@ body {
     color: white;
     text-decoration: none;
 }
-.vertical ul li a:hover {
-    background-color: greenyellow;
+.vertical ul li a:hover{
+    display: inline;
+    background-color: #c8c935;
     padding: 5px;
-    color: green;
-    display: block;
+    padding-inline-end: 50px;
+    color: #326703;
 }
 .section-principale {
     flex: 1;
@@ -65,11 +68,11 @@ body {
 }
 .section-principale h2 {
     color: #003300;
-    border-bottom: 2px solid #cccc00;
+    border-bottom: 2px solid #ffffa3;
     padding-bottom: 5px;
 }
 .encart-droite {
-    width: 200px;
+    width: 250px;
     padding-top: 100px;
 }
 .encart-droite h3 {
