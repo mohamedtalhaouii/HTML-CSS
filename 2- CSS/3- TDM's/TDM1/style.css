@@ -1,4 +1,7 @@
-/*Mohamed Talhaoui*/
+/*
+Nom : Mohamed Talhaoui
+Filière : Informatique et IA (S3) | 2024/2025
+*/
 body {
     font-family: Verdana, sans-serif;
     background-color: white;
@@ -27,7 +30,7 @@ body {
     text-align: right;
 }
 .horizontal a {
-    color: white;
+    color: white;                   
     text-decoration: none;
     margin-right: 10px;
     font-size: 15px;
@@ -46,7 +49,7 @@ body {
 }
 .vertical ul {
     list-style: none;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .vertical ul li {
     margin-bottom: 10px;
@@ -55,21 +58,36 @@ body {
     color: white;
     text-decoration: none;
 }
-.vertical ul li a:hover{
-    display: inline;
+.current{
+    color: #326703;
+    width: 150px;
     background-color: #c8c935;
     padding: 5px;
-    padding-inline-end: 50px;
+    padding-right: 50px;
+}
+.vertical ul li a:hover{
+    display: inline;
     color: #326703;
+    background-color: #c8c935;
+    padding: 5px;
+    padding-right: 50px;
 }
 .section-principale {
     flex: 1;
     padding: 20px;
 }
-.section-principale h2 {
-    color: #003300;
+.titre {
+    color: darkgreen;
+    font-variant: small-caps;
     border-bottom: 2px solid #ffffa3;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.sous-titre {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
 }
 .encart-droite {
     width: 250px;
