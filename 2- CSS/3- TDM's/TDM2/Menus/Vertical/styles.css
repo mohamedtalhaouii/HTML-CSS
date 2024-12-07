@@ -24,45 +24,41 @@ li{
     width: 300px;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
 ul{
     display: block;
     background-color: #660033;
     float: left;
 }
 
-.navbar a{
+a{
+    text-decoration: none;
+    color: white;
     display: block;
     padding: 20px;
     margin: 0;
     text-align: start;
 }
 
-.navbar a:hover{
+a:hover{
     background-color: #3c011e;
 }
 
-.navbar .dropdown a:focus{
+.dropdown a:focus{
     background-color: #3c011e;
 }
 
-.navbar .dropdown-menu li a:hover{
+.sous-menu li a:hover{
     background-color: #581333cc;
 }
 
-.dropdown-menu{
+.sous-menu{
     display: none;
     position: relative;
     margin-bottom: 20px;
     background-color: #3c011e;
     text-indent: 15px;
-    transition: display 350ms ease-in-out;
 }
 
-.dropdown > a:focus + .dropdown-menu{
+.dropdown > a:focus + .sous-menu{
     display: block;
 }
