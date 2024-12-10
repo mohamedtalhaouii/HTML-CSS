@@ -1,3 +1,7 @@
+/*
+Nom : Mohamed Talhaoui
+Filière : Informatique et IA (S3) | 2024/2025
+*/
 body{
     font: 16px sans-serif;
     color: #3c3c3c;
@@ -41,6 +45,20 @@ input{
 }
 
 input:focus{
+    box-shadow: 0px 5px 20px #d7d7d7;
+    transition: 0.3s;
+}
+
+textarea{
+    border-radius: 5px;
+    border-color: #b4b4b484;
+    padding: 10px;
+    margin: 10px;
+    min-height: 50px;
+    resize: none;
+}
+
+textarea:focus{
     box-shadow: 0px 5px 20px #d7d7d7;
     transition: 0.3s;
 }

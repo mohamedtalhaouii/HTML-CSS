@@ -1,0 +1,155 @@
+/*
+Nom : Mohamed Talhaoui
+Filière : Informatique et IA (S3) | 2024/2025
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: #3c3c3c;
+}
+
+header{
+    background-image: linear-gradient(to right, #0077ff , rgb(230, 0, 255));
+    padding: 100px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+header button{
+    background-color: orange;
+    padding: 15px;
+    width: 180px;
+    height: 50px;
+    margin: 20px;
+    border: 0;
+    border-radius: 5px;
+    transition: 200ms ease-out;
+}
+
+button:hover{
+    border: 1px;
+    box-shadow: 0px 10px 10px #00000073;
+    transition: 200ms ease-in;
+}
+
+header h1{
+    margin: 20px;
+}
+
+span{
+    color: orange;
+}
+
+.main{
+    margin: 10px;
+    justify-items: center;
+}
+
+.main h2{
+    padding-top: 50px;
+    margin: 30px;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+}
+
+.about div{
+    display: block;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #9b9a9a54;
+}
+
+.features{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+    padding-top: 0;
+    color: #bb00ff;
+}
+
+ul li{
+    display: flex;
+    font-size: 16px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.products{
+    background-color: whitesmoke;
+    padding: 100px;
+    margin: 15px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #9b9a9a79;
+}
+.products h2{
+    justify-self: center;
+    padding-bottom: 20px;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+    .layout{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .layout div{
+        display: block;
+        text-align: center;
+        margin-right: 0 !important;
+    }
+}
+
+.layout div{
+    display: block;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5em;
+    margin-right: 80px;
+}
+
+#prix{
+    color: #bb00ff;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+
+.layout img{
+    display: block;
+    width: 75%;
+    justify-self: center;
+    align-self: center;
+}

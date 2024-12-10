@@ -1,3 +1,7 @@
+<!--
+Nom : Mohamed Talhaoui
+Filière : Informatique et IA (S3) | 2024/2025
+-->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,22 +22,21 @@
             <input type="email" placeholder="Entrez votre email" required>
 
             <label>Numéro de Telephone</label>
-            <input type="number" placeholder="Entrez votre numéro de téléphone" required>
+            <input type="tel" placeholder="Entrez votre numéro de téléphone" required>
 
             <label>Numéro Matricule</label>
             <input type="number" placeholder="Entrez votre numéro matricule" required>
 
             <label>Filière</label>
             <select name="Filiere" required>
-                <option>-- Sèlectionnez votre filère --</option>
+                <option hidden>-- Sèlectionnez votre filère --</option>
                 <option value="1">MIP</option>
                 <option value="2">PC</option>
                 <option value="3">BCG</option>
             </select>
 
             <label for="message">Message (facultatif)</label>
-            <input style="font-family: monospace; min-height: 50px;" type="text" placeholder="Laissez un message">
-
+            <textarea placeholder="Laissez un message"></textarea>
             <button type="submit">Soumission</button>
         </form>
     </fieldset>
