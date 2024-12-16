@@ -1,0 +1,87 @@
+/*
+Nom : Mohamed Talhaoui
+Filière : Informatique et IA (S3) | 2024/2025
+*/
+body{
+    font: 16px sans-serif;
+    color: #3c3c3c;
+    padding: 10px;
+    margin: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    max-width: 500px;
+}
+
+fieldset{
+    display: flex;
+    background-color: white;
+    justify-self: center;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 0px 10px 20px #d7d7d7;
+}
+
+h2{
+    align-self: center;
+}
+
+div{
+    align-self: center;
+    padding-bottom: 20px;
+    font-size: small;
+    opacity: 0.6;
+}
+
+input{
+    border-radius: 5px;
+    border-color: #b4b4b484;
+    padding: 10px;
+    margin: 10px;
+}
+
+input:focus{
+    box-shadow: 0px 5px 20px #d7d7d7;
+    transition: 0.3s;
+}
+
+textarea{
+    border-radius: 5px;
+    border-color: #b4b4b484;
+    padding: 10px;
+    margin: 10px;
+    min-height: 80px;
+    resize: none;
+}
+
+textarea:focus{
+    box-shadow: 0px 5px 20px #d7d7d7;
+    transition: 0.3s;
+}
+
+label{
+    font-size: 14px;
+    align-items: start;
+    padding-left: 10px;
+    margin-bottom: -5px;
+    margin-top: 10px;
+}
+
+button{
+    border: 0;
+    border-radius: 5px;
+    background-color: #660033;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: #660033be;
+    box-shadow: 0px 10px 20px #d7d7d7;
+    transition: 0.3s;
+}
