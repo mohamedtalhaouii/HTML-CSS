@@ -1,0 +1,118 @@
+/*
+Nom : Mohamed Talhaoui
+Filière : Informatique et IA (S3) | 2024/2025
+*/
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    background-color: white;
+}
+
+.navbar-wrapper {
+    display: flex;
+    background-color: #9d426b;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+
+.menu-horizontal {
+    justify-items: right;
+    width: 100%;
+    padding-right: 20%;
+}
+
+li {
+    display: inline;
+    min-width: max-content;
+    width: 150px;
+}
+
+ul {
+    display: flex;
+    background-color: #9d426b;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown a:hover {
+    background-color: #813758;
+    background-image: linear-gradient(to bottom, #813758, #642b44);
+}
+
+.sous-menu li a:hover {
+    background-color: #813758;
+}
+
+.sous-menu a {
+    color: #353451;
+}
+
+.sous-menu a:hover {
+    color: white;
+}
+
+.sous-menu {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px #d7d7d7;
+    flex-wrap: wrap;
+    transition-property: display opacity;
+    transition-duration: 600ms;
+    transition-behavior: allow-discrete;
+}
+
+.dropdown>a:focus+.sous-menu {
+    display: flex;
+    opacity: 1;
+    flex-wrap: wrap;
+}
+
+/*
+.sous-dropdown{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px #d7d7d7;
+    flex-wrap: wrap;
+}
+
+.sous-menu > a:hover + .sous-dropdown{
+    display: flex;
+    opacity: 1;
+}
+*/
+
+.sub-bottom {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    right: auto;
+    border-width: 5px;
+    border-style: solid dashed dashed dashed;
+    border-color: #dadae7 transparent transparent transparent;
+    background: transparent;
+    border-radius: 0;
+}
