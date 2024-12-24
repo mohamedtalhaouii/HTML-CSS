@@ -3,19 +3,19 @@ Nom : Mohamed Talhaoui
 Filière : Informatique et IA (S3) | 2024/2025
 */
 
-* {
+*{
     font-family: 'Titillium Web', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body {
+body{
     font-family: sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     background-color: white;
 }
 
-.navbar-wrapper {
+.navbar-wrapper{
     display: flex;
     background-color: #9d426b;
     align-self: center;
@@ -23,34 +23,56 @@ body {
     width: 100%;
 }
 
-.menu-horizontal {
+.menu-horizontal{
     justify-items: right;
     width: 100%;
-    padding-right: 20%;
+    padding-right: 10%;
 }
 
-li {
+li{
     display: inline;
     min-width: max-content;
-    width: 150px;
+    width: 100%;
 }
 
-ul {
+ul{
     display: flex;
     background-color: #9d426b;
 }
 
-a {
+/*---------COULEUR HORIZONTAL-----------*/
+ul#main-menu > li:nth-child(n) {
+    border-top: 3px solid #16a1e7;
+}
+
+ul#main-menu > li:nth-child(2n){
+    border-top: 3px solid #4c616a;
+}
+
+ul#main-menu > li:nth-child(3n) {
+    border-top: 3px solid #fbba18;
+}
+
+ul#main-menu > li:nth-child(4n) {
+    border-top: 3px solid #3ac83d;
+}
+
+ul#main-menu>li:nth-child(5n) {
+    border-top: 3px solid #d31e4d;
+}
+/*-------------------------------------*/
+
+a{
     display: block;
+    position: relative;
     text-decoration: none;
     color: white;
     padding: 15px 20px;
-    text-align: center;
     white-space: nowrap;
     box-sizing: border-box;
 }
 
-.dropdown {
+.dropdown{
     position: relative;
 }
 
@@ -59,11 +81,25 @@ a {
     background-image: linear-gradient(to bottom, #813758, #642b44);
 }
 
-.sous-menu li a:hover {
+/*-----MODIFIER LA LARGEUR DU SOUS MENU----*/
+li:nth-child(1) > .sous-menu li{
+    min-width: 200px;
+}
+
+li:nth-child(2) > .sous-menu li{
+    min-width: 200px;
+}
+
+li:nth-child(3) > .sous-menu li{
+    min-width: 300px;
+}
+/*------------------------------------------*/
+
+.sous-menu li a:hover{
     background-color: #813758;
 }
 
-.sous-menu a {
+.sous-menu a{
     color: #353451;
 }
 
@@ -71,7 +107,12 @@ a {
     color: white;
 }
 
-.sous-menu {
+.dropdown:hover > a, .sous-menu:hover > a {
+    background-color: #813758;
+    background-image: linear-gradient(to bottom, #813758, #642b44);
+}
+
+.sous-menu{
     display: none;
     opacity: 0;
     position: absolute;
@@ -83,29 +124,13 @@ a {
     transition-behavior: allow-discrete;
 }
 
-.dropdown>a:focus+.sous-menu {
+.dropdown:hover .sous-menu {
     display: flex;
-    opacity: 1;
     flex-wrap: wrap;
-}
-
-/*
-.sous-dropdown{
-    display: none;
-    opacity: 0;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0px 10px 15px #d7d7d7;
-    flex-wrap: wrap;
-}
-
-.sous-menu > a:hover + .sous-dropdown{
-    display: flex;
     opacity: 1;
 }
-*/
 
-.sub-bottom {
+.sub-bottom{
     position: absolute;
     bottom: 4px;
     left: 50%;
@@ -113,6 +138,18 @@ a {
     border-width: 5px;
     border-style: solid dashed dashed dashed;
     border-color: #dadae7 transparent transparent transparent;
+    background: transparent;
+    border-radius: 0;
+}
+
+.sub-right{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #dadae7;
     background: transparent;
     border-radius: 0;
 }
