@@ -7,6 +7,11 @@ Filière : Informatique et IA (S3) | 2024/2025
     font-family: 'Titillium Web', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+* a{
+    text-decoration: none;
 }
 
 body{
@@ -14,6 +19,8 @@ body{
     font-size: 1.1em;
     background-color: white;
 }
+
+/*******************************************************************************/
 
 .navbar-wrapper{
     display: flex;
@@ -41,28 +48,28 @@ ul{
 }
 
 /*---------COULEUR HORIZONTAL-----------*/
-ul#main-menu > li:nth-child(n) {
+.navbar-wrapper ul#main-menu > li:nth-child(n) {
     border-top: 3px solid #16a1e7;
 }
 
-ul#main-menu > li:nth-child(2n){
+.navbar-wrapper ul#main-menu > li:nth-child(2n){
     border-top: 3px solid #4c616a;
 }
 
-ul#main-menu > li:nth-child(3n) {
+.navbar-wrapper ul#main-menu > li:nth-child(3n) {
     border-top: 3px solid #fbba18;
 }
 
-ul#main-menu > li:nth-child(4n) {
+.navbar-wrapper ul#main-menu > li:nth-child(4n) {
     border-top: 3px solid #3ac83d;
 }
 
-ul#main-menu>li:nth-child(5n) {
+.navbar-wrapper ul#main-menu>li:nth-child(5n) {
     border-top: 3px solid #d31e4d;
 }
 /*-------------------------------------*/
 
-a{
+.navbar-wrapper a{
     display: block;
     position: relative;
     text-decoration: none;
@@ -117,11 +124,12 @@ li:nth-child(3) > .sous-menu li{
     opacity: 0;
     position: absolute;
     background-color: #fff;
-    box-shadow: 0px 10px 15px #d7d7d7;
+    box-shadow: 0px 10px 15px #18171747;
     flex-wrap: wrap;
     transition-property: display opacity;
     transition-duration: 600ms;
     transition-behavior: allow-discrete;
+    z-index: 99999999; /*to make sous-menu forward all elements in the website*/
 }
 
 .dropdown:hover .sous-menu {
@@ -153,3 +161,376 @@ li:nth-child(3) > .sous-menu li{
     background: transparent;
     border-radius: 0;
 }
+
+/**************************************************************************************************/
+
+/*------------Background Section------------*/
+.news-container{
+    display: flex;
+    background-image: url(/Images/bg-logo.png);
+    height: 400px;
+    background-color: #f2f2f2;
+    margin-inline: 20px;
+}
+
+.right-logo{
+    display: flex;
+    float: left;
+    margin: 10px;
+    align-items: center;
+}
+
+.right-logo .logo-ump{
+    display: block;
+    width: 100px;
+    justify-self: center;
+}
+
+.right-logo .logo-title {
+    display: block;
+    width: 220px;
+    justify-self: center;
+}
+
+.annonces{
+    position: relative;
+}
+
+.annonces .container{
+    display: block;
+}
+
+.annonce-background{
+    width: 100%;
+    background-size: 100%;
+    float: right;
+}
+
+.lighting{
+    position: absolute;
+    bottom: -3%;
+    background: linear-gradient(transparent, #23232380);
+    width: 100%;
+    height: 40%;
+}
+
+.news-caption{
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px #00000099;
+}
+
+.news-caption a{
+    text-decoration: none;
+}
+
+.news-caption h3{
+    position: relative;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 10px 10px 10px 20px;
+    margin: 0;
+}
+
+/*-----------President Section------------*/
+
+.president {
+    background-color: #f2f2f2;
+    margin-inline: 20px;
+    padding: 10px;
+}
+
+.president .container{
+    display: flex;
+}
+
+.president .container img{
+    border-radius: 100%;
+    margin: 20px;
+    align-self: center;
+}
+
+.president .about-fpn {
+    align-content: center;
+    font-size: 12pt;
+    color: #5a5a5a;
+}
+
+.president .about-fpn a{
+    color: #1489c4;
+    text-decoration: none;
+}
+
+/************************************************************************************************/
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 45% 25% 30%;
+    margin-inline: 20px;
+}
+
+/********Actualités**********/
+
+.colum-1{
+    display: block;
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+.default-title{
+    font-weight: 600;
+    font-size: 16pt;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    color: #9d426b;
+}
+
+.default-title::after{
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    content: " ";
+    width: 50px;
+    border-bottom: 2px solid #9d426b;
+}
+
+.news-list a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #555555;
+}
+
+.news-item{
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border: 2px dashed transparent;
+    transition: all 0.8s;
+    padding: 10px;
+}
+
+.news-item:hover{
+    background-color: #fff;
+    border: 2px dashed #f2f2f2;
+}
+
+.thumb-news{
+    display: inline-block;
+    background-color: #555555;
+    width: 160px;
+    height: auto;
+}
+
+.news-list content{
+    margin-left: 15px;
+    color: #555555;
+}
+
+.news-list .title{
+    font-size: 16pt;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.news-list .abstract{
+    font-size: 10pt;
+}
+
+.news-list .abstract p{
+    display: block;
+    line-height: 12pt;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.more{
+    color: #555555;
+    transition: all 0.5s;
+    font-size: 11pt;
+}
+
+a.more:hover{
+    color: #888888;
+}
+
+a.more:focus{
+    text-decoration: underline;
+}
+
+.symb-plus::before{
+    content: "\f067";
+}
+
+.symb-plus{
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/********Notes**********/
+
+.colum-2{
+    display: block;
+}
+
+.notes{
+    position: relative;
+    margin-inline-end: 10px;
+}
+
+.item a{
+    display: block;
+    text-decoration: none;
+    color: #555555;
+}
+
+.item{
+    background: transparent;
+    height: auto;
+}
+
+.notes-item{
+    display: block;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 5px;
+    height: 332px;
+    border: 2px dashed transparent;
+    transition: all 0.8s;
+}
+
+.notes-item:hover{
+    background-color: #fff;
+    border: 2px dashed #f2f2f2;
+}
+
+.thumb-notes{
+    display: inline-block;
+    background-color: #555555;
+    width: 100%;
+    height: auto;
+}
+
+.notes-item .content{
+    color: #555555;
+}
+
+.notes-item .title{
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.notes-item .abstract{
+    font-size: 10pt;
+}
+
+/********Formations**********/
+
+.colum-3{
+    display: block;
+    background-color: #9d426b;
+    color: white;
+    height: max-content;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.white-title{
+    position: relative;
+    font-weight: 600;
+    font-size: 16pt;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.white-title::after{
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    content: " ";
+    width: 50px;
+    border-bottom: 2px solid white;
+}
+
+.formation-list{
+    display: inline;
+    list-style: none;
+    color: white;
+    overflow: hidden;
+}
+
+.formation-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.formation-list a:hover {
+    text-decoration: none;
+}
+
+.formation-item{
+    display: flex;
+    padding: 4px 15px 4px 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.formation-item:hover {
+    margin-left: 5px;
+}
+
+.icon{
+    font-size: 10pt;
+}
+
+.chevron-right:before {
+    content: "\f054";
+}
+
+.chevron-right{
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon .plus::before{
+    content: "\f067";
+}
+
+.formation-item title{
+    margin-left: 5px;
+    font-size: 12pt;
+}
+
+/********************Evénements***********************/
