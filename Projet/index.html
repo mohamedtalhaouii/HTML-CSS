@@ -10,10 +10,16 @@ Filière : Informatique et IA (S3) | 2024/2025
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Faculté Pluridisciplinaire de Nador</title>
-    <link
-        href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&amp;subset=latin-ext"
-        rel="stylesheet">
+
+    <!--Pour tab icon-->
+    <link href="/Media/FPN/logo.png" rel="shortcut icon"/>
+
+    <!--Pour font (Titillium) de site de faculté-->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!--J'ai utilisé ça pour les icônes (tous les classes avec "fa" sont des icônes FontAwesome)-->
+    <script src="https://kit.fontawesome.com/c0f4b0e555.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -96,8 +102,7 @@ Filière : Informatique et IA (S3) | 2024/2025
                         </a>
                         <ul class="sous-menu">
                             <li>
-                                <a href="#">Centre d'Information, d'Orientation <br>et de la Vie Estudiantine
-                                    (CIOVE)</a>
+                                <a href="#">Centre d'Information, d'Orientation <br>et de la Vie Estudiantine (CIOVE)</a>
                             </li>
                             <li>
                                 <a href="#">Assurance Maladie Obligatoire</a>
@@ -113,9 +118,8 @@ Filière : Informatique et IA (S3) | 2024/2025
                             <li>
                                 <a href="#">Coordonnées</a>
                             </li>
-
                             <li>
-                                <a href="#">Formulaire de contact</a>
+                                <a href="/Projet/Contact/index.html">Formulaire de contact</a>
                             </li>
                         </ul>
                     </li>
@@ -123,17 +127,19 @@ Filière : Informatique et IA (S3) | 2024/2025
             </nav>
         </div>
     </header>
-    <!------------------------------------------------------------------------------------------------------>
+
+<!--------------------------------------------------------------------------------------------------------->
+
     <section class="news-container">
         <div class="right-logo">
             <a href="#">
-                <img class="logo-ump" src="Images/logo.png" alt="Logo UMP"><br />
-                <img class="logo-title" src="Images/title-logo.png" alt="Logo Title">
+                <img class="logo-ump" src="Images/logo.png" alt="logo UMP"><br />
+                <img class="logo-title" src="Images/title-logo.png" alt="logo Title">
             </a>
         </div>
         <div class="annonces">
             <div class="container">
-                <img class="annonce-background" src="/Images/annonce.png">
+                <img class="annonce-background" src="/Media/FPN/annonce.png">
                 <div class="lighting"></div>
                 <div class="news-caption">
                     <a href="#">
@@ -144,6 +150,7 @@ Filière : Informatique et IA (S3) | 2024/2025
         </div>
         </div>
     </section>
+
     <section class="president">
         <div class="container">
             <img class="president-img" src="Images/president.png" alt="President" width="90" height="90">
@@ -326,7 +333,7 @@ Filière : Informatique et IA (S3) | 2024/2025
                 </a>
             </div>
             <div class="text-right">
-                <a class="more" href="#"><i class="symb-plus"></i>Plus d'infos</a>
+                <a class="more" href="#"><i class="fa fa-plus"></i>Plus d'infos</a>
             </div>
         </section>
 
@@ -337,7 +344,7 @@ Filière : Informatique et IA (S3) | 2024/2025
                 <div class="item">
                     <a href="#">
                         <span class="notes-item">
-                            <img class="thumb-notes" src="/Images/notes.jpg">
+                            <img class="thumb-notes" src="/Media/FPN/notes.jpg">
                             <span class="content">
                                 <span class="title">Formations - Faculté Plur...</span>
                                 <span class="abstract">
@@ -351,10 +358,9 @@ Filière : Informatique et IA (S3) | 2024/2025
                 </div>
             </div>
             <div class="text-right">
-                <a class="more" href="#"><i class="symb-plus"></i>Plus de notes</a>
+                <a class="more" href="#"><i class="fa fa-plus"></i>Plus de notes</a>
             </div>
         </section>
-
 
         <!-----------Formations------------->
         <section class="colum-3" id="formations">
@@ -363,49 +369,265 @@ Filière : Informatique et IA (S3) | 2024/2025
                 <li class="formation-item">
                     <a href="#">
                         <span class="icon">
-                            <i class="chevron-right"></i>
+                            <i class="fa fa-chevron-right"></i>
                         </span>
                         <span class="title">Licence d’Etude Fondamentale (LEF)</span>
                     </a>
                 </li>
-        
+
                 <li class="formation-item">
                     <a href="#">
                         <span class="icon">
-                            <i class="chevron-right"></i>
+                            <i class="fa fa-chevron-right"></i>
                         </span>
                         <span class="title">Masters</span>
                     </a>
                 </li>
-        
+
                 <li class="formation-item">
                     <a href="#">
                         <span class="icon">
-                            <i class="chevron-right"></i>
+                            <i class="fa fa-chevron-right"></i>
                         </span>
                         <span class="title">Licence d’éducation</span>
                     </a>
                 </li>
-        
+
                 <li class="formation-item">
                     <a href="#">
                         <span class="icon">
-                            <i class="chevron-right"></i>
+                            <i class="fa fa-chevron-right"></i>
                         </span>
                         <span class="title">Licences d&#039;université</span>
                     </a>
                 </li>
-        
+
                 <li class="formation-item">
                     <a href="#">
                         <span class="icon">
-                            <i class="plus"></i>
+                            <i class="fa fa-plus"></i>
                         </span>
                         <span class="title">Plus de formations</span>
                     </a>
                 </li>
             </ul>
         </section>
+
+        <!---------Evénements----------->
+        <section class="colum-2-3">
+            <div class="events">
+                <h2 class="default-title evenments-title">Evénements</h2>
+                <ul class="event-list">
+                    <li class="event-item">
+                        <div class="ribbon ribbon-present"><span>En Cours</span></div>
+                        <a
+                            href="#">
+                            <span class="date">
+                                <span class="number">01</span>JAN
+                            </span>
+                            <span class="content">
+                                <span class="title">Colloque National sous le thème : Stratégie de la logistique...</span>
+                                <span class="abstract">
+                                    <p>
+                                        AVEC MOHAMED TALHAOUI
+                                    </p>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="event-list">
+                    <li class="event-item">
+                        <div class="ribbon ribbon-futur"><span>A venir</span></div>
+                        <a
+                            href="#">
+                            <span class="date">
+                                <span class="number">02</span>FEV
+                            </span>
+                            <span class="content">
+                                <span class="title">Colloque National sous le thème : Stratégie de la logistique...</span>
+                                <span class="abstract">
+                                    <p>
+                                        AVEC MOHAMED TALHAOUI
+                                    </p>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="event-list">
+                    <li class="event-item">
+                        <div class="ribbon ribbon-futur"><span>A venir</span></div>
+                        <a
+                            href="#">
+                            <span class="date">
+                                <span class="number">03</span>MAR
+                            </span>
+                            <span class="content">
+                                <span class="title">Colloque National sous le thème : Stratégie de la logistique...</span>
+                                <span class="abstract">
+                                    <p>
+                                        AVEC MOHAMED TALHAOUI
+                                    </p>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="event-list">
+                    <li class="event-item">
+                        <div class="ribbon ribbon-futur"><span>A venir</span></div>
+                        <a
+                            href="#">
+                            <span class="date">
+                                <span class="number">04</span>AVL
+                            </span>
+                            <span class="content">
+                                <span class="title">Colloque National sous le thème : Stratégie de la logistique...</span>
+                                <span class="abstract">
+                                    <p>
+                                        AVEC MOHAMED TALHAOUI
+                                    </p>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="event-list">
+                    <li class="event-item">
+                        <div class="ribbon ribbon-futur"><span>A venir</span></div>
+                        <a
+                            href="#">
+                            <span class="date">
+                                <span class="number">05</span>MAY
+                            </span>
+                            <span class="content">
+                                <span class="title">Colloque National sous le thème : Stratégie de la logistique...</span>
+                                <span class="abstract">
+                                    <p>
+                                        AVEC MOHAMED TALHAOUI
+                                    </p>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="event-list">
+                    <li class="event-item">
+                        <div class="ribbon ribbon-futur"><span>A venir</span></div>
+                        <a
+                            href="#">
+                            <span class="date">
+                                <span class="number">06</span>JUN
+                            </span>
+                            <span class="content">
+                                <span class="title">Colloque National sous le thème : Stratégie de la logistique...</span>
+                                <span class="abstract">
+                                    <p>
+                                        AVEC MOHAMED TALHAOUI
+                                    </p>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="event-list">
+                    <li class="event-item">
+                        <div class="ribbon ribbon-futur"><span>A venir</span></div>
+                        <a
+                            href="#">
+                            <span class="date">
+                                <span class="number">07</span>JUL
+                            </span>
+                            <span class="content">
+                                <span class="title">Colloque National sous le thème : Stratégie de la logistique...</span>
+                                <span class="abstract">
+                                    <p>
+                                        AVEC MOHAMED TALHAOUI
+                                    </p>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="poster">
+                    <img src="/Media/FPN/colloque.jpeg" alt="">
+                </div>
+                <div class="elementer"></div>
+            </div>
+            <div class="text-right">
+                <a class="more" href="#"><i class="fa fa-plus"></i>Plus d'événements</a>
+            </div>
+        </section>
     </div>
+
+<!------------------------------------------------------------------------------------------------------>
+
+    <!---------Gallerie----------->
+    <div class="gallerie-container">
+        <h2 class="default-title gallerie-title">Gallerie</h2>
+        <section class="galerie">
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+            <div class="images">
+                <a href="#"><img src="/Media/FPN/notes.jpg" alt=""></a>
+            </div>
+        </section>
+    </div>
+
+<!-------------------------------------------------------------------------------------------------->
+    
+    <!---------footer----------->
+    <footer>
+        <div class="content">
+            <p>
+                <span class="right"><a href="https://linkedin.com/in/mohamedtalhaoui" style="color: #9d426b;"><b>Mohamed Talhaoui</b></a> | Tous droits réservés <b><a href="https://www.ump.ma/" style="color: #964724d6;;">ump.ma</a></b> | &copy;2025</span>
+                <span class="left">
+                    <a href="https://www.facebook.com/FacultePluridisciplinaireNador" class="social-media"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com/in/mohamedtalhaoui" class="social-media"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                    <a href="https://github.com/mohamedtalhaouii/" class="social-media"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/fpnador/" class="social-media"><i class="fa-brands fa-x-twitter"></i></a>
+                </span>
+            </p>
+        </div>
+    </footer>
+
 </body>
 </html>
