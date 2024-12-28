@@ -703,6 +703,22 @@ footer .right{
     float: right !important;
 }
 
+footer .right a{
+    color: #9d426b;
+}
+
+footer .right a:hover{
+    color: #9d426bce;
+}
+
+footer .right a:last-child{
+    color: #964624;
+}
+
+footer .right a:last-child:hover{
+    color: #964624be;
+}
+
 footer .left{
     float: left !important;
 }
