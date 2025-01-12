@@ -54,7 +54,7 @@ main {
     color: #333;
 }
 
-.tdm a:hover + h2{
+.tdm h2:hover{
     color: #7051ef;
 }
 
