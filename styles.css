@@ -54,6 +54,10 @@ main {
     color: #333;
 }
 
+.tdm a:hover + h2{
+    color: #7051ef;
+}
+
 .exercices-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
