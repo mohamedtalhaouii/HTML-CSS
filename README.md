@@ -1,4 +1,4 @@
-## Résumé Complet de HTML
+## Résumé de HTML
 
 ### 1. Structure de Document HTML5
 
